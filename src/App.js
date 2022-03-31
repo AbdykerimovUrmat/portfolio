@@ -2,7 +2,7 @@ import { Alert, Button, Snackbar, Stack, Step, StepLabel, Stepper, SvgIcon, Tool
 import { withStyles } from "@mui/styles";
 import { Box } from "@mui/system";
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { Language, Leaderboard, Mail, Message, MusicNote, Telegram, Yard } from "@mui/icons-material";
+import { Instagram, Language, Leaderboard, Mail, Message, MusicNote, Telegram, Yard } from "@mui/icons-material";
 import { useEffect, useState } from "react";
 
 const getYearMessage = (yearNumber) => {
@@ -122,6 +122,10 @@ function App() {
           Telegram
         </Button>
 
+        <Button color='success' variant='outlined' startIcon={<Instagram />} sx={{textTransform: 'none', margin: '10px'}} onClick={() => openUrlNewTab('https://www.instagram.com/abdykerimov.urm/')}>
+          Instagram
+        </Button>
+
         <Tooltip title="Скопировать" placement="right">
           <Button color='info' variant='outlined' startIcon={<Mail />} sx={{textTransform: 'none', margin: '10px'}} onClick={() => {
             navigator.clipboard.writeText('abdykerimov.urm@gmail.com');
@@ -153,9 +157,10 @@ function App() {
                   '& .MuiStepLabel-label.Mui-active.MuiStepLabel-alternativeLabel':
                     {
                       color: 'white', // Just text label (ACTIVE)
+                      fontSize: '17px'
                     },
                   '& .MuiStepLabel-root .Mui-active .MuiStepIcon-text': {
-                    fill: 'white', // circle's number (ACTIVE)
+                    fill: 'black', // circle's number (ACTIVE)
                   }
                 }}
                 >{label}</StepLabel>

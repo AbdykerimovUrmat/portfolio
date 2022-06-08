@@ -2,7 +2,7 @@ import { Alert, Button, Snackbar, Stack, Step, StepLabel, Stepper, SvgIcon, Tool
 import { withStyles } from "@mui/styles";
 import { Box } from "@mui/system";
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { Instagram, Language, Leaderboard, Mail, Message, MusicNote, Telegram, Yard, YouTube } from "@mui/icons-material";
+import { Brightness1, Instagram, Language, Leaderboard, Mail, Message, MusicNote, Telegram, Yard, YouTube } from "@mui/icons-material";
 import { useEffect, useState } from "react";
 
 const getYearMessage = (yearNumber) => {
@@ -134,9 +134,13 @@ function App() {
             почта: abdykerimov.urm@gmail.com
           </Button>
         </Tooltip>
+
+        <Button color='success' variant='outlined' startIcon={<Brightness1 />} sx={{textTransform: 'none', margin: '10px'}} onClick={() => openUrlNewTab('https://shikimori.one/Urmat+Abdykerimov')}>
+          Shikimori
+        </Button>
         
         <Button color='error' variant='outlined' startIcon={<YouTube />} sx={{textTransform: 'none', margin: '10px'}} onClick={() => openUrlNewTab('https://www.youtube.com/channel/UCgz2WOhMzciGoybrewJBxNQ/videos')}>
-          Youtube Канал
+          Youtube
         </Button>
 
         <Button color='error' variant='outlined' startIcon={<MusicNote />} sx={{textTransform: 'none', margin: '10px'}} onClick={() => openUrlNewTab('https://music.yandex.ru/users/abdykerimov.urm/playlists')}>

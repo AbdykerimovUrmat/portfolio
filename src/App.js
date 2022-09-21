@@ -98,7 +98,7 @@ function App() {
         </CustomColorOrange>
         <CustomColorBlue>
           <Typography color='white' variant='h4' component='div' gutterBottom margin='13px' marginTop='0px' marginBottom='0px'>
-            Имел дело с ASP.NET, Spring, React, Docker, Git
+            Имел дело с ASP.NET, Xamarin, Spring, React, Docker, Git
           </Typography>
         </CustomColorBlue>
 

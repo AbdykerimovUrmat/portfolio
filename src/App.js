@@ -51,7 +51,7 @@ function App() {
   const timeInYandex = new Date() - startedYandex
   const tsInMonth = 2678400000
   const months = timeInYandex / tsInMonth | 0
-  const periodMessage = months >= 12 ? getYearMessage(months) : getMonthMessage(months)
+  const periodMessage = months >= 12 ? getYearMessage(months / 12) : getMonthMessage(months)
   const steps = ['Спортивное программирование в школе', '1 год в TimelySoft', `${periodMessage} в Yandex`]
 
   const [alertState, setAlertState] = useState({alertOpen: false, message: '', severity: 'success'})
